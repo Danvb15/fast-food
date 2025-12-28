@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastFood App Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍔 FastFood App Premium 🍟</h1>
+  <p>Elige tus productos y envía tu pedido por WhatsApp</p>
+</header>
+
+<!-- Categorías -->
+<section class="category" id="hamburguesas">
+  <h2>🍔 Hamburguesas</h2>
+  <div class="product-row">
+    <div class="item featured">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgDDG7hFKwirw_a9Wkm-p2FMjZIm3ZsaUQw&s" alt="Hamburguesa Clásica">
+      <h3>Hamburguesa Clásica</h3>
+      <p class="price">$12.000</p>
+      <button class="add-btn" data-item="Hamburguesa Clásica" data-price="12000" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgDDG7hFKwirw_a9Wkm-p2FMjZIm3ZsaUQw&s">Agregar</button>
+    </div>
+    <div class="item">
+      <img src="https://thumbs.dreamstime.com/b/gran-hamburguesa-de-pollo-la-parrilla-con-cutlet-doble-y-queso-sobre-fondo-madera-en-el-armario-lateral-208658240.jpg" alt="Hamburguesa Doble">
+      <h3>Hamburguesa Doble</h3>
+      <p class="price">$18.000</p>
+      <button class="add-btn" data-item="Hamburguesa Doble" data-price="18000" data-img="https://thumbs.dreamstime.com/b/gran-hamburguesa-de-pollo-la-parrilla-con-cutlet-doble-y-queso-sobre-fondo-madera-en-el-armario-lateral-208658240.jpg">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<section class="category" id="perros">
+  <h2>🌭 Perros Calientes</h2>
+  <div class="product-row">
+    <div class="item featured">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQwOGk7MQvdKvmOFfP5P2hl9gDoh-XblwnA&s" alt="Perro Especial">
+      <h3>Perro Especial</h3>
+      <p class="price">$10.000</p>
+      <button class="add-btn" data-item="Perro Especial" data-price="10000" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQwOGk7MQvdKvmOFfP5P2hl9gDoh-XblwnA&s">Agregar</button>
+    </div>
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMoSfThmC9Yn5lKwZSshwl4kCUoKKtTCdb5g&s" alt="Perro Clásico">
+      <h3>Perro Clásico</h3>
+      <p class="price">$8.000</p>
+      <button class="add-btn" data-item="Perro Clásico" data-price="8000" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMoSfThmC9Yn5lKwZSshwl4kCUoKKtTCdb5g&s">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<section class="category" id="bebidas">
+  <h2>🥤 Bebidas</h2>
+  <div class="product-row">
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOJ01Kx11LWLLRk2WLuFfZNhMh8NvAVvO2KA&s" alt="Gaseosa">
+      <h3>Gaseosa</h3>
+      <p class="price">$3.000</p>
+      <button class="add-btn" data-item="Gaseosa" data-price="3000" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOJ01Kx11LWLLRk2WLuFfZNhMh8NvAVvO2KA&s">Agregar</button>
+    </div>
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2C1LIIgIFLyOR4igQMhgCJBisrzqIwlXI_Q&s" alt="Jugo Natural">
+      <h3>Jugo Natural</h3>
+      <p class="price">$4.000</p>
+      <button class="add-btn" data-item="Jugo Natural" data-price="4000" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2C1LIIgIFLyOR4igQMhgCJBisrzqIwlXI_Q&s">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- Carrito deslizable -->
+<div id="cart-sidebar">
+  <h2>Tu Carrito 🛒</h2>
+  <ul id="order-list"></ul>
+  <p id="total-price">Total: $0</p>
+  <input type="text" id="address" placeholder="Escribe tu dirección de envío" />
+  <button id="whatsapp-btn" class="whatsapp-btn">Enviar por WhatsApp</button>
+</div>
+
+<!-- Botón flotante abrir carrito -->
+<div id="cart-button">🛒</div>
+
+
+<!-- Sonidos -->
+<audio id="add-sound" src="sounds/add.mp3"></audio>
+<audio id="remove-sound" src="sounds/remove.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
